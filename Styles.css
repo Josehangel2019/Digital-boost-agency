@@ -1,0 +1,212 @@
+ /* General Styles */
+ body {
+    color: #333;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+}
+h1, h2, h3 {
+    color: #222;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* Header */
+header {
+    align-items: center;
+    background: #00098b;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+header .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+header nav ul {
+    display: flex;
+    gap: 15px;
+}
+header nav a {
+    color: white;
+    font-weight: bold;
+}
+header nav a:hover {
+    color: black;
+}
+
+
+/* Hero Section */
+.hero {
+    color: white;
+    background-image:url(imagenes/Foto1.jpg) ; 
+    padding: 50px 20px;
+    text-align: center;
+
+}
+.hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+.hero button {
+    background: white;
+    border: none;
+    border-radius: 5px;
+    color: #00098b;
+    cursor: pointer;
+    font-size: 1em;
+    padding: 10px 20px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+.hero button:hover {
+    background: #00098b;
+    color: white;
+    transform: scale(1.1);
+}
+
+/* Services */
+.services {
+    background: #f4f4f4;
+    padding: 50px 20px;
+    text-align: center;
+}
+.services h2 {
+    margin-bottom: 30px;
+}
+.services .service-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+.service {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+}
+.service h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+/* testimonials */
+.testimonials {
+    background: #00098b;
+    padding: 50px 20px;
+    text-align: center;
+}
+ .testimonials h2 {
+    color: white;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+.testimonials h2 {
+    margin-bottom: 30px;
+}
+.testimonios-list {
+    align-items: center;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: auto auto auto;
+    height: 350px;
+    justify-items: center;
+}    
+.test {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+}
+#contact {
+    background: #f4f4f4;
+    padding: 50px 20px;
+    text-align: center;
+}
+#contact h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+.contact-form {
+    gap: 15px;
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+}
+.contact-form div {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+}
+.contact-form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.contact-form input, .contact-form textarea {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+    padding: 10px;
+    width: 100%;
+}
+.contact-form button {
+    background: #00098b;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-size: 1em;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
+.contact-form button:hover {
+    background: #0056b3;
+}
+.btn_wsp {
+    background: #0df053;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.3);
+    border-radius: 40px;
+    bottom: 30px;
+    color: #fff;
+    font-size: 40px;
+    height: 52px;
+    line-height: 55px;
+    position: fixed;
+    right: 30px;
+    text-align: center;
+    width: 55px;
+    z-index: 100;
+}
+.btn_wsp:hover {
+    color: #0df053;
+    text-decoration: none;
+}
+
+/* Footer */
+footer {
+    background: #222;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+footer ul {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+footer ul a {
+    color: #00098b;
+}
