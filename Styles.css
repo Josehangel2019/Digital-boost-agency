@@ -45,10 +45,12 @@ header nav a:hover {
 
 /* Hero Section */
 .hero {
-    color: white;
+    color: rgb(255, 255, 255);
     background-image:url(imagenes/Foto1.jpg) ; 
     padding: 50px 20px;
     text-align: center;
+    font-weight: bold;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
 
 }
 .hero h1 {
@@ -209,4 +211,73 @@ footer ul {
 }
 footer ul a {
     color: #00098b;
+}
+
+
+@media screen and (max-width: 1100px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    header nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .hero h1 {
+        font-size: 2em;
+    }
+    .hero p {
+        font-size: 1em;
+    }
+    .services .service-list {
+        flex-direction: column;
+        align-items: center;
+    }
+    .testimonios-list {
+        grid-template-columns: 1fr;
+        height: auto;
+    }
+    .contact-form {
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header {
+        padding: 10px;
+    }
+    header .logo {
+        font-size: 1.2em;
+    }
+    header nav ul {
+        gap: 5px;
+    }
+    .hero {
+        padding: 20px 10px;
+    }
+    .hero h1 {
+        font-size: 1.8em;
+    }
+    .hero p {
+        font-size: 0.9em;
+    }
+    .hero button {
+        font-size: 0.9em;
+        padding: 8px 15px;
+    }
+    .services .service {
+        width: 100%;
+        padding: 15px;
+    }
+    .test {
+        width: 90%;
+    }
+    .contact-form button {
+        padding: 8px 15px;
+    }
+    footer {
+        padding: 10px;
+    }
 }
